@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<title>The Open Tutorial System</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script type="text/javascript">
+		function ask(){confirm("Are you sure you want to download the selected items?");}
+		function checkall()
+		{
+			if(document.getElementById('1').checked)
+			{
+				document.getElementById('2').checked=true;
+				document.getElementById('3').checked=true;
+				document.getElementById('4').checked=true;
+				document.getElementById('5').checked=true;
+			}
+			else
+			{
+				document.getElementById('2').checked=false;
+				document.getElementById('3').checked=false;
+				document.getElementById('4').checked=false;
+				document.getElementById('5').checked=false;
+			}
+		}
+	</script>
+</head>
+<body>
+<img src="images/left-top.png" style="margin-left:200px;margin-top:25px;"/>
+<img src="images/right-top.png" style="margin-left:180px;margin-top:25px;"/>
+<div id="wrapper">
+    <div id="content">
+		
+        <nav>
+            <ul id="appleNav">
+                <li><a href="index.html" title="Home"><img src="images/logo.png" alt="Home" style="width:30px;height:30px;" /></a></li>
+                <li><a href="dashboard.html" title="Dashboard">Dashboard</a></li>
+                <li><a href="profile.html" title="Profile">Profile</a></li>
+                <li><a href="tutorial.html" title="Tutorials">Tutorials</a></li>
+                <li><a href="cart.html" title="Cart">Cart</a></li>
+                <li><a href="history.html" title="History">History</a></li>
+                <li><a href="register.html" title="Register">Register</a></li>
+				<li><a href="login.html" title="Login">Login</a></li>
+                <li>
+                    <form>
+                        <input type="text" placeholder="Search" />
+                    </form>
+                </li>
+            </ul>
+        </nav>
+        
+        <div id="main">
+     
+        <div id="home"></div>
+        <div class="content_box_top"></div>
+    <div class="content_box">
+			<!-- EDIT HERE -->
+            <h2>Tutorial</h2>
+            <form>
+				<fieldset>
+					<legend>Search</legend>
+						<div class="high_education">
+						<p>Level: 
+									<select>
+										<option>Primary School</option>
+										<option>Secondary School</option>
+										<option>University</option>
+										<option>College</option>
+									</select>
+						</p>
+						</div>
+						
+						<div class="examination_paper">
+						<p>Examination Paper:
+									<select>
+										<option>UPSR</option>
+										<option>PMR</option>
+										<option>SPM</option>
+										<option>STPM</option>
+									</select>	
+						</p>
+						</div>
+						
+						<div class="student">
+						<p>Student:
+									<select>
+										<option>Form 1</option>
+										<option>Form 2</option>
+										<option>Form 3</option>
+										<option>Diploma</option>
+										<option>Degree</option>
+										<option>Foundation</option>
+									</select>
+						</p>
+						</div>
+						
+						
+						
+						<div class="year">
+						<p>Year: <input type="text" name="year" size="5"/></p>
+						</div>
+						
+						<div class="search_btn">
+						<p><input type="button" name="submit" value="Search"/></p>
+						</div>
+				</fieldset>
+			</form>
+            
+			<div class="result">
+			<p>Results 1-5 of 15
+<table width="600px" style="text-align:center;">
+									
+										
+										<table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+	<tr><th><input type="checkbox" onchange="checkall();" id="1"/></th><th>Title</th><th>View</th><th>Edit</th><th>Delete</th></tr><!-- Table Header -->
+    
+	<tr><td><input type="checkbox" id="2"/></td><td><a href="tutorial_details.html">Kertas 1 Pep Akhir Tahun Ting 4 Terengganu 2001</a>
+
+										<td><a href="view_tutorial.html"><img src="images/view.png" width="20px" height="20px;"/></a></td>
+										<td><a href="#"><img src="images/delete.png" width="20px" height="20px;" onclick="confirmdelete();"/></a></td>
+										<td><a href="edit_tutorial.html"><img src="images/update.png" width="20px" height="20px;"/></a></td>
+									    
+
+	
+	<tr><td><input type="checkbox" id="4"/></td><td><a href="tutorial_details.html">Kertas 1 Pep Akhir Tahun Ting 4 Terengganu 2001</a>
+	
+	
+										<td><a href="view_tutorial.html"><img src="images/view.png" width="20px" height="20px;"/></a></td>
+										<td><a href="#"><img src="images/delete.png" width="20px" height="20px;" onclick="confirmdelete();"/></a></td>
+										<td><a href="edit_tutorial.html"><img src="images/update.png" width="20px" height="20px;"/></a></td>
+									    
+	
+	
+	<tr class='even'><td><input type="checkbox" id="5"/></td><td><a href="tutorial_details.html">Kertas 1 Pep Akhir Tahun Ting 4 Terengganu 2001</a>>
+
+										<td><a href="view_tutorial.html"><img src="images/view.png" width="20px" height="20px;"/></a></td>
+										<td><a href="#"><img src="images/delete.png" width="20px" height="20px;" onclick="confirmdelete();"/></a></td>
+										<td><a href="edit_tutorial.html"><img src="images/update.png" width="20px" height="20px;"/></a></td>
+									    
+</table>
+			</p>
+				
+				<div class="download_btn">
+				<p><input type="button" name="view" value="Download Selected" onclick="ask();"/></p>
+				</div>
+			
+				<div class="previous_btn">
+				<p><input type="button" name="previous" value="Previous"/></p>
+				</div>
+				
+				<div class="next_btn">
+				<p><input type="button" name="next" value="Next"/></p>
+				</div>
+			
+			</div>
+            <div class="cleaner h30"></div>
+            <a href="#top" class="gototop">Go to Top</a>
+            <div class="cleaner"></div>
+        </div> <!-- end of a content box -->
+        <div class="content_box_bottom"></div>
+		</div> <!-- end of main -->
+    </div> <!-- end of content -->
+    <div id="footer">
+    
+        Copyright &copy; 2048 
+        
+	</div>
+</div> <!-- end of wrapper -->
+
+</body>
+</html>
+									

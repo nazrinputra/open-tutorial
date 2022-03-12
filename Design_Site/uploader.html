@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<title>The Open Tutorial System</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	
+	<script type="text/javascript">
+	
+		function more()
+		{
+			document.getElementById('view').innerHTML="<p id='view'><input type='button'  name='hide' value='Hide Feedback' onclick='less();'/></p><div class='middle><div><p class='testimonial-author'>Emily | <span>Happy Customer :)</span></p><blockquote class='testimonial'><p>You guys are the best!</p></blockquote><span class='arrow-down'></span></div><div><p class='testimonial-author'>Frank | <span>Happy Customer :)</span></p><blockquote class='testimonial'><p>Keep up the good work.</p></blockquote><span class='arrow-down'></span></div></div>";
+		}
+	
+		function less()
+		{
+			document.getElementById('view').innerHTML="<p id='view'><input type='button'  name='view' value='View Feedback' onclick='more();'/></p>";
+		}
+		
+		function follow()
+		{
+			document.getElementById('follow').innerHTML="<p id='follow'><input type='button' name='unfollow' value='Unfollow' onclick='unfollow();'/></p>";
+		}
+		
+		function unfollow()
+		{
+			document.getElementById('follow').innerHTML="<p id='follow'><input type='button' name='follow' value='Follow' onclick='follow();'/></p>";
+		}
+	
+	</script>
+	
+</head>
+<body>
+<img src="images/left-top.png" style="margin-left:200px;margin-top:25px;"/>
+<img src="images/right-top.png" style="margin-left:180px;margin-top:25px;"/>
+<div id="wrapper">
+    <div id="content">
+		
+        <nav>
+            <ul id="appleNav">
+                <li><a href="index.html" title="Home"><img src="images/logo.png" alt="Home" style="width:30px;height:30px;" /></a></li>
+                <li><a href="dashboard.html" title="Dashboard">Dashboard</a></li>
+                <li><a href="profile.html" title="Profile">Profile</a></li>
+                <li><a href="tutorial.html" title="Tutorials">Tutorials</a></li>
+                <li><a href="cart.html" title="Cart">Cart</a></li>
+                <li><a href="history.html" title="History">History</a></li>
+                <li><a href="register.html" title="Register">Register</a></li>
+				<li><a href="login.html" title="Login">Login</a></li>
+                <li>
+                    <form>
+                        <input type="text" placeholder="Search" />
+                    </form>
+                </li>
+            </ul>
+        </nav>
+        
+        <div id="main">
+     
+        <div id="home"></div>
+        <div class="content_box_top"></div>
+    <div class="content_box">
+			<!-- EDIT HERE -->
+            <h2>John</h2>
+            
+			<div class="profile_pic">
+				<img src="images/profile.png" width="150px" height="150px"/>
+				
+				<div class="information">
+				<p><em>Based in US, John has been an Open Tutorial member since Dec 27, 2004</em></p>
+				<p>99.8% Positive feedback</p>
+				<p><b>1000</b> Followers</p>
+				<p><b>28941</b> Views</p>
+				<p>Member since: <b>Feb 13, 2001</b></p>
+				<p><img src="images/location_icon.png" width="30px"/> United States</p>
+				
+				<p id="follow"><input type="button" name="follow" value="Follow" onclick="follow();"/></p>
+				</div>
+			</div>
+			
+			
+			
+			<div class="feedback_rating">
+				<h5><b>Feedback Rating<b></h5>
+				
+				<p><img src="images/five_star.png" width="100px" /> Item as described</p>
+				<p></p><img src="images/five_star.png" width="100px"/> Price</p>
+				<h3>Feedback</h3>
+				<p id="view"><input type="button"  name="view" value="View Feedback" onclick="more();"/></p>	
+				
+				<div>	
+				<h2>Item For Sale</h2> 
+				
+				<div class="item">
+				
+					<table cellspacing='0' "> <!-- cellspacing='0' is important, must stay -->
+						<tr><th></th><th>Title</th><th>Price</th></tr><!-- Table Header -->
+						
+						<tr><td><img src="images/doc_icon.png"</td><td><a href="tutorial_details.html">Kertas 1 Pep Akhir Tahun Ting 4 Terengganu 2001</a></td><td>RM 1.00</td></tr><!-- Table Row -->
+						<tr class='even'><td><img src="images/doc_icon.png"</td><td><a href="tutorial_details.html">Kertas 1 Pep Akhir Tahun Ting 4 Terengganu 2001</a></td><td>RM 1.00</td></tr><!-- Darker Table Row -->
+
+						<tr></td><td><img src="images/doc_icon.png"</td><td><a href="tutorial_details.html">Kertas 1 Pep Akhir Tahun Ting 4 Terengganu 2001</a></td><td>RM 1.00</td></tr>
+						<tr class='even'><td><img src="images/doc_icon.png"</td><td><a href="tutorial_details.html">Kertas 1 Pep Akhir Tahun Ting 4 Terengganu 2001</a></td><td>RM 1.00</td></tr>
+					</table>
+					
+					<div class="see_btn">
+					<p><a href="sale.html"><input type="button"  name="see_all" value="See All Items"/></a></p>
+					</div>
+				
+				</div>
+				
+				</div>
+				
+				
+			</div>
+			
+            <div class="cleaner h30"></div>
+            <a href="#top" class="gototop">Go to Top</a>
+            <div class="cleaner"></div>
+        </div> <!-- end of a content box -->
+        <div class="content_box_bottom"></div>
+		</div> <!-- end of main -->
+    </div> <!-- end of content -->
+    <div id="footer">
+    
+        Copyright &copy; 2048 
+        
+	</div>
+</div> <!-- end of wrapper -->
+
+
+
+</body>
+</html>

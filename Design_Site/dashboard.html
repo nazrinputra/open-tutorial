@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<title>The Open Tutorial System</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script type="text/javascript">
+		function empty()
+		{
+			alert("No messages!");
+		}
+	</script>
+</head>
+<body>
+<img src="images/left-top.png" style="margin-left:200px;margin-top:25px;"/>
+<img src="images/right-top.png" style="margin-left:180px;margin-top:25px;"/>
+<div id="wrapper">
+    <div id="content">
+		
+        <nav>
+            <ul id="appleNav">
+                <li><a href="index.html" title="Home"><img src="images/logo.png" alt="Home" style="width:30px;height:30px;" /></a></li>
+                <li><a href="dashboard.html" title="Dashboard">Dashboard</a></li>
+                <li><a href="profile.html" title="Profile">Profile</a></li>
+                <li><a href="tutorial.html" title="Tutorials">Tutorials</a></li>
+                <li><a href="cart.html" title="Cart">Cart</a></li>
+                <li><a href="history.html" title="History">History</a></li>
+                <li><a href="register.html" title="Register">Register</a></li>
+				<li><a href="login.html" title="Login">Login</a></li>
+                <li>
+                    <form>
+                        <input type="text" placeholder="Search" />
+                    </form>
+                </li>
+            </ul>
+        </nav>
+        
+        <div id="main">
+     
+        <div id="home"></div>
+        <div class="content_box_top"></div>
+    <div class="content_box">
+			<!-- EDIT HERE -->
+            <h2>Member Dashboard </h2>
+            
+			<div class="left-dashboard">
+                <h3>Dashboard Items</h3>
+				<br>
+                <ul class="list">
+                    <li><a href="my_tutorial.html" class="link">My Tutorials Tools &raquo;<a></li>
+                    <li><a href="fav_tutorial.html" class="link">My Favourite Tutorials &raquo;</a></li>
+                    <li><a href="follow.html" class="link">Uploaders I'm Following &raquo;</a></li>
+                    <li><a href="" class="link" onclick="empty();">My Messages &raquo;</a></li>
+                    <li><a href="history.html" class="link">Transaction History &raquo;</a></li>
+                </ul>
+            </div>
+			
+			<div class="right-dashboard">
+			<p> <h5><b> Latest Annoncement </h5></b><p>
+			<p><em>Proin facilisis ullamcorper turpis, in placerat. Praesent rutrum augue vel felis vehicula vel luctus sapien commodo</em></p>
+			<p><em>Praesent rutrum augue vel felis vehicula vel.Praesent rutrum augue vel felis vehicula vel luctus sapien commodo</em></p>
+			<p><em>Proin facilisis ullamcorper turpis, in placerat. Praesent rutrum augue vel felis vehicula vel luctus sapien commodo</em></p>
+			
+			<br>
+			<br>
+			</div>
+			
+			<br><br><br>
+			<h5><span style="margin-left:20px;">Summary</span></h5>
+			<br>
+			<div id="profile">
+				<p style="float:left;margin-right:50px;margin-left:20px;"><img src="images/profile.png" style="width:150px;height:200px;"/></p>
+				<p>Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span id="profile_details">Member</span></p>
+				<p>Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span id="profile_details">member@email.com</span></p>
+				<p>Contact &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span id="profile_details">012-3456789</span></p>
+				<p>Rating &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span id="profile_details">N/A</span></p>
+				<p>Tutorials Uploaded &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span id="profile_details">2</span></p>
+				<p>Tutorials Downloaded &nbsp;&nbsp; : <span id="profile_details">17</span></p>
+				<p>Upload/Download Ratio &nbsp;: <span id="profile_details">0.12</span></p>
+			</div>
+			
+            <a href="#top" class="gototop">Go to Top</a>
+            <div class="cleaner"></div>
+        </div> <!-- end of a content box -->
+        <div class="content_box_bottom"></div>
+		</div> <!-- end of main -->
+    </div> <!-- end of content -->
+    <div id="footer">
+    
+        Copyright &copy; 2048 
+        
+	</div>
+</div> <!-- end of wrapper -->
+
+
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js'></script>
+<script type='text/javascript' src='js/logging.js'></script>
+</body>
+</html>

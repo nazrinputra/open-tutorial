@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+	<title>Admin Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="css/styleadmin.css" />
+	<link rel="shortcut icon" href="images/icon.png">
+</head>
+<body>
+	<div id="wrapper">
+		<div id="content">
+			<div class="c1">
+				<div class="controls">
+					<nav class="links">
+						<ul>
+							<li class="selected"><a href="profile.html" class="ico1">Profile <!--<span class="num">2</span>--></a></li>
+							<li><a href="tutorial.html" class="ico2">Tutorials <span class="num">77</span></a></li>
+							<li><a href="addtutorial.html" class="ico3">Add Tutorials <span class="num">!</span></a></li>
+							<li><a href="search.html" class="ico4">Search <!--<span class="num">0</span>--></a></li>
+							<li><a href="history.html" class="ico5">History <!--<span class="num">0</span>--></a></li>
+						</ul>
+					</nav>
+					<div class="profile-box">
+						<span class="profile">
+							<a href="profile.html" class="section">
+								<img class="image" src="images/img1.png" alt="image description" width="26" height="26" />
+								<span class="text-box">
+									Welcome
+									<strong class="name">Admin Name</strong>
+								</span>
+							</a>
+							<a href="#" class="opener">opener</a>
+						</span>
+						<a href="logout.html" class="btn-on">On</a>
+					</div>
+				</div>
+				<div class="tabs">
+					<div id="tab-1" class="tab">
+						<article>
+							<div class="text-section">
+								<h1>Dashboard</h1>
+								<p>This is a quick overview of some features</p>
+							</div>
+							<div class="page-title">
+								<h2>Update Profile</h2>
+							</div>
+							<div class="text-section-black">
+									<form name="profilefrm" method="" action="">
+										<p>Public Profile Settings</p>
+										<p><img src="images/img1.png" style="width:100px;height:100px;"/></p>
+										<p><input type="button" value="Change Image" name="changebtn" style=""/></p>
+										<p>Name : <input type="text" name="name" value="Admin Name" size="50" style="margin-left:25px;"/></p>
+										<p>Email : <input type="email" name="email" value="admin@email.com" size="30" style="margin-left:30px;"/></p>
+										<p>Contact : <input type="text" name="contact" value="012-3456789" maxlength="11" size="8" style="margin-left:10px;"/></p>
+										<p>Birthday : <input type="date" name="birthday" style="margin-left:10px;"/></p>
+										<p>Gender : <select name="gender" style="margin-left:15px;">
+														<option>Male</option>
+														<option>Female</option>
+													</select>
+										</p>
+										<p>Education : <input type="checkbox" value="SPM" name="spm"/>SPM
+														<input type="checkbox" value="STPM" name="stpm"/>STPM
+														<input type="checkbox" value="Foundation" name="foundation"/>Foundation
+														<input type="checkbox" value="Diploma" name="diploma"/>Diploma
+														<input type="checkbox" value="Degree" name="degree"/>Degree
+														<input type="checkbox" value="Masters" name="Masters"/>Masters
+														<input type="checkbox" value="Doctorate" name="doctorate"/>Doctorate
+										</p>
+										<p><a href="profile.html"><input type="button" value="Save Info" name="savebtn"/></a></p>
+									</form>
+							</div>
+							<ul class="states">
+								<li class="warning">Warning : 2 fields are empty.</li>
+							</ul>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+		<aside id="sidebar">
+			<strong class="logo"><a href="index_logged.html">ot</a></strong>
+			<ul class="tabset buttons">
+				<li class="active">
+					<a href="#tab-1" class="ico1"><span>Dashboard</span><em></em></a>
+					<span class="tooltip"><span>Dashboard</span></span>
+				</li>
+				<li>
+					<a href="#tab-2" class="ico2"><span>Gallery</span><em></em></a>
+					<span class="tooltip"><span>Gallery</span></span>
+				</li>
+				<li>
+					<a href="#tab-3" class="ico3"><span>Pages</span><em></em></a>
+					<span class="tooltip"><span>Pages</span></span>
+				</li>
+				<li>
+					<a href="#tab-4" class="ico4"><span>Tools</span><em></em></a>
+					<span class="tooltip"><span>Tools</span></span>
+				</li>
+				<li>
+					<a href="#tab-5" class="ico5"><span>Archive</span><em></em></a>
+					<span class="tooltip"><span>Archive</span></span>
+				</li>
+				<li>
+					<a href="#tab-6" class="ico6">
+						<span>Comments</span><em></em>
+					</a>
+					<span class="num">ERROR</span>
+					<span class="tooltip"><span>Comments</span></span>
+				</li>
+				<li>
+					<a href="#tab-7" class="ico7"><span>Connection</span><em></em></a>
+					<span class="tooltip"><span>Connection</span></span>
+				</li>
+				<li>
+					<a href="#tab-8" class="ico8"><span>Settings</span><em></em></a>
+					<span class="tooltip"><span>Settings</span></span>
+				</li>
+			</ul>
+		</aside>
+	</div>
+</body>
+</html>

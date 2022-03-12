@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>The Open Tutorial System</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	
+	<script>
+	
+	function changeBtn()
+	{
+		alert("Download started");
+		document.getElementById('download').innerHTML="<p><input type='button' name='rate' id='rate' value='Rate This Tutorial'/></p>";
+	}
+	
+	function follow()
+		{
+			document.getElementById('follow').innerHTML="<a style='text-decoration:none; color:red;' onclick='unfollow();'><img src='images/red_minus.png' style='width: 15px; height:15px;' /> Unfollow this uploader</a>";
+		}
+		
+	function unfollow()
+		{
+			document.getElementById('follow').innerHTML="<a style='text-decoration:none; color:green;' onclick='follow();'><img src='images/green_plus.png' style='width: 15px; height:15px;' /> Follow this uploader</a>";
+		}
+	
+	</script>
+</head>
+<body>
+<img src="images/left-top.png" style="margin-left:200px;margin-top:25px;"/>
+<img src="images/right-top.png" style="margin-left:180px;margin-top:25px;"/>
+<div id="wrapper">
+    <div id="content">
+		
+        <nav>
+            <ul id="appleNav">
+                <li><a href="index.html" title="Home"><img src="images/logo.png" alt="Home" style="width:30px;height:30px;" /></a></li>
+                <li><a href="dashboard.html" title="Dashboard">Dashboard</a></li>
+                <li><a href="profile.html" title="Profile">Profile</a></li>
+                <li><a href="tutorial.html" title="Tutorials">Tutorials</a></li>
+                <li><a href="cart.html" title="Cart">Cart</a></li>
+                <li><a href="history.html" title="History">History</a></li>
+                <li><a href="register.html" title="Register">Register</a></li>
+				<li><a href="login.html" title="Login">Login</a></li>
+                <li>
+                    <form>
+                        <input type="text" placeholder="Search" />
+                    </form>
+                </li>
+            </ul>
+        </nav>
+        
+        <div id="main">
+     
+        <div id="home"></div>
+        <div class="content_box_top"></div>
+    <div class="content_box">
+			<!-- EDIT HERE -->
+            <h2>Tutorial Details</h2>
+            
+			<div class="icon_item">
+				<img src="images/doc_icon.png" alt="doc" title="Kertas 1 Pep Akhir Tahun Ting 4 Terengganu 2001" width="90px" height="50px"/>
+			</div>
+			
+			<div class="detail_item">
+			
+				<div class="element_item">
+					<h3>Kertas 1 Pep Akhir Tahun Ting 4 Terengganu 2001</h3>
+				
+					<p>Price: <b>RM 1.00</b></p>
+					<p>Upload by: <a href="uploader.html">John</a> </p>
+					<p>Category: Document</p>
+					<p>Size: 36.9 MB</p>
+					<p>Rating: 4+</p>
+					
+					<div class="favourite">
+					<a><img src="images/favourites.png" style="width: 20px; height:20px;"/>Add to favourite</a>
+					</div>
+					
+					<div class="back_btn">
+					<p><a href="tutorial.html"><input type="button" name="back" value="Back"/></a></p>
+					</div>
+					
+					<div class="downloadnow_btn">
+					<p id="download"><input type="button" name="download"  value="Download Now!" onclick="changeBtn();"/></p>
+					</div>
+				
+					<div class="cart_btn">
+						<p><a href="cart.html"><input type="button" name="add_cart" value="Add to cart"/></a></p>
+					</div>
+					
+				</div>
+				
+				<div class="uploader_information">
+				
+					<fieldset>
+						<h4>Uploader's Information</h4>
+						<p>Username: <a href="uploader.html">John</a></p>
+						<p>99.8% Positive feedback</p>
+						<span id="follow"><a style="text-decoration:none; color:green;" onclick="follow();"><img src="images/green_plus.png" style="width: 15px; height:15px;" /> Follow this uploader</a></span>
+						<p><a href="sale.html" style="text-decoration:none; margin-top:15px; color:purple;"><img src="images/pointer_right.png" style="width: 20px; height:20px;margin-top:5px;"/> See other items</a></p>
+						
+					</fieldset>
+					
+				</div>
+				
+				
+				
+				
+			
+			</div>
+			
+            <div class="cleaner h30"></div>
+            <a href="#top" class="gototop">Go to Top</a>
+            <div class="cleaner"></div>
+        </div> <!-- end of a content box -->
+        <div class="content_box_bottom"></div>
+		</div> <!-- end of main -->
+    </div> <!-- end of content -->
+    <div id="footer">
+    
+        Copyright &copy; 2048 
+        
+	</div>
+</div> <!-- end of wrapper -->
+
+
+
+
+</body>
+</html>

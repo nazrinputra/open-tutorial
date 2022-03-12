@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<title>The Open Tutorial System</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script type="text/javascript">
+		function ask(){confirm("Are you sure you want to delete the selected items?");}
+		function checkall()
+		{
+			if(document.getElementById('1').checked)
+			{
+				document.getElementById('2').checked=true;
+				document.getElementById('3').checked=true;
+				document.getElementById('4').checked=true;
+				document.getElementById('5').checked=true;
+			}
+			else
+			{
+				document.getElementById('2').checked=false;
+				document.getElementById('3').checked=false;
+				document.getElementById('4').checked=false;
+				document.getElementById('5').checked=false;
+			}
+		}
+	</script>
+</head>
+<body>
+<img src="images/left-top.png" style="margin-left:200px;margin-top:25px;"/>
+<img src="images/right-top.png" style="margin-left:180px;margin-top:25px;"/>
+<div id="wrapper">
+    <div id="content">
+		
+        <nav>
+            <ul id="appleNav">
+                <li><a href="index.html" title="Home"><img src="images/logo.png" alt="Home" style="width:30px;height:30px;" /></a></li>
+                <li><a href="dashboard.html" title="Dashboard">Dashboard</a></li>
+                <li><a href="profile.html" title="Profile">Profile</a></li>
+                <li><a href="tutorial.html" title="Tutorials">Tutorials</a></li>
+                <li><a href="cart.html" title="Cart">Cart</a></li>
+                <li><a href="history.html" title="History">History</a></li>
+                <li><a href="register.html" title="Register">Register</a></li>
+				<li><a href="login.html" title="Login">Login</a></li>
+                <li>
+                    <form>
+                        <input type="text" placeholder="Search" />
+                    </form>
+                </li>
+            </ul>
+        </nav>
+        
+        <div id="main">
+     
+        <div id="home"></div>
+        <div class="content_box_top"></div>
+    <div class="content_box">
+			<!-- EDIT HERE -->
+            <h2>My Tutorials</h2>
+			
+			<div class="result">
+				<table cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+	<tr><th><input type="checkbox" onchange="checkall();" id="1"/></th><th>Title</th><th>Level</th><th>Paper</th><th>Student</th><th>Update</th><th>View</th></tr><!-- Table Header -->
+    
+<tr><td><input type="checkbox" id="2"/></td><td><a href="view_my_tutorial.html">Kertas 1 Pep Akhir Tahun Ting 4 Terengganu 2001</a></td><td>Secondary School</td><td>SPM</td><td>Form 4</td><td><a href="edit_my_tutorial.html"><img src="images/update.png"/></a></td><td><a href="view_my_tutorial.html"><img src="images/view.png"/></a></td></tr><!-- Table Row -->
+	<tr class='even'><td><input type="checkbox" id="3"/></td><td><a href="view_my_tutorial.html">Kertas 1 Pep Akhir Tahun Ting 4 Terengganu 2001</a></td><td>Secondary School</td><td>SPM</td><td>Form 4</td><td><a href="edit_my_tutorial.html"><img src="images/update.png"/></a></td><td><a href="view_my_tutorial.html"><img src="images/view.png"/></a></td></tr><!-- Darker Table Row -->
+
+	<tr><td><input type="checkbox" id="4"/></td><td><a href="view_my_tutorial.html">Kertas 1 Pep Akhir Tahun Ting 4 Terengganu 2001</a></td><td>Secondary School</td><td>SPM</td><td>Form 4</td><td><a href="edit_my_tutorial.html"><img src="images/update.png"/></a></td><td><a href="view_my_tutorial.html"><img src="images/view.png"/></a></td></tr>
+	<tr class='even'><td><input type="checkbox" id="5"/></td><td><a href="view_my_tutorial.html">Kertas 1 Pep Akhir Tahun Ting 4 Terengganu 2001</a></td><td>Secondary School</td><td>SPM</td><td>Form 4</td><td><a href="edit_my_tutorial.html"><img src="images/update.png"/></a></td><td><a href="view_my_tutorial.html"><img src="images/view.png"/></a></td></tr>
+
+</table>
+			</p>
+				
+				<div class="delete_btn">
+				<p><input type="button" name="delete" value="Delete Selected" onclick="ask();"/></p>
+				</div>
+				
+				<div class="add_btn">
+				<p><a href="add_tutorial.html"><input type="button" name="add" value="Add New"/></a></p>
+				</div>
+			
+				<div class="previous_btn">
+				<p><input type="button" name="previous" value="Previous"/></p>
+				</div>
+				
+				<div class="next_btn">
+				<p><input type="button" name="next" value="Next"/></p>
+				</div>
+			
+			</div>
+            <div class="cleaner h30"></div>
+            <a href="#top" class="gototop">Go to Top</a>
+            <div class="cleaner"></div>
+        </div> <!-- end of a content box -->
+        <div class="content_box_bottom"></div>
+		</div> <!-- end of main -->
+    </div> <!-- end of content -->
+    <div id="footer">
+    
+        Copyright &copy; 2048 
+        
+	</div>
+</div> <!-- end of wrapper -->
+
+</body>
+</html>

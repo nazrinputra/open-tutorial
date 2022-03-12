@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+	<title>Admin Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="css/styleadmin.css" />
+	<link rel="shortcut icon" href="images/icon.png">
+	<script type="text/javascript">
+		function error()
+		{
+			alert("Please login first!");
+		}
+		function more()
+		{
+			document.getElementById("read").innerHTML="<p id='read'><a href='#' onclick='less();'>Hide details...</a></p><p>Every aspects of the open tutorial website requires reviewing and monitoring.</p><p>This is to avoid confusion or any other unexpected events to occur.</p><p>Therefore, a system was developed specifically for the purpose.</p><p>This system allows admin to view and update profile among many other various tasks.</p><p><img src='images/adminprofile.png' style='width:720px;height:410px'/></p><p>Apart from the admin profile, this system is also crucial for monitoring tutorials.</p><p>This system also allows admin to view and update tutorials.</p><p><img src='images/admintutorial.png' style='width:720px;height:410px'/></p><p>Due to a huge amount of tutorials in our database, keeping track is a hassle.</p><p>Monitoring specific tutorials should not be a problem with our built in function.</p><p>This system includes a built in search function to find specific tutorials.</p><p><img src='images/adminsearch.png' style='width:720px;height:410px'/></p><p>While there are many more tasks that this system can achieve, those are for you to explore.</p><p>Feel free to explore the system!</p>";
+		}
+		function less()
+		{
+			document.getElementById("read").innerHTML="<p id='read'><a href='#' onclick='more();'>Learn more...</a></p>";
+		}
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="content">
+			<div class="c1">
+				<div class="controls">
+					<nav class="links">
+						
+					</nav>
+					<div class="profile-box">
+						<span class="profile">
+							<a href="#" class="section" onclick="error();">
+								<span class="text-box">
+									Welcome Guest
+									<strong class="name">Please Login</strong>
+								</span>
+							</a>
+							<a href="#" class="opener"></a>
+						</span>
+						<a href="#" class="btn-on">On</a>
+					</div>
+				</div>
+				<div class="tabs">
+					<div id="tab-1" class="tab">
+						<article>
+							<div class="text-section">
+								<h1>Administrator</h1>
+								<p>This system is designed for administrator only</p>
+							</div>
+							<div class="page-title">
+								<h2>Monitor and Update Everything</h2>
+							</div>
+							<div class="text-section-black">
+								<p>As an <b>administrator</b>, you have the right to view, edit, delete, add and perform many more functions in the website.</p> 
+								<p>To ensure such <i>privileges</i> were not used incorrectly, we require you to <b>login</b> before performing anything here.</p>
+								<p></br><p>
+								<p><i>Please login to continue...</i></p>
+								<p></br><p>
+								<p></br><p>
+								<a href="login.html"><input type="button" value="Proceed to Login Page" name="redirectloginbtn"/></a>
+								<p></br><p>
+								<p></br><p>
+								<p id="read"><a href="#" onclick="more();">Learn more...</a></p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+		<aside id="sidebar">
+			<strong class="logo"><a href="#">ot</a></strong>
+			<ul class="tabset buttons">
+				<li class="active">
+					<a href="#tab-1" class="ico1"><span>Dashboard</span><em></em></a>
+					<span class="tooltip"><span>Dashboard</span></span>
+				</li>
+				<li>
+					<a href="#tab-2" class="ico2"><span>Gallery</span><em></em></a>
+					<span class="tooltip"><span>Gallery</span></span>
+				</li>
+				<li>
+					<a href="#tab-3" class="ico3"><span>Pages</span><em></em></a>
+					<span class="tooltip"><span>Pages</span></span>
+				</li>
+				<li>
+					<a href="#tab-4" class="ico4"><span>Tools</span><em></em></a>
+					<span class="tooltip"><span>Tools</span></span>
+				</li>
+				<li>
+					<a href="#tab-5" class="ico5"><span>Archive</span><em></em></a>
+					<span class="tooltip"><span>Archive</span></span>
+				</li>
+				<li>
+					<a href="#tab-6" class="ico6">
+						<span>Comments</span><em></em>
+					</a>
+					<span class="tooltip"><span>Comments</span></span>
+				</li>
+				<li>
+					<a href="#tab-7" class="ico7"><span>Connection</span><em></em></a>
+					<span class="tooltip"><span>Connection</span></span>
+				</li>
+				<li>
+					<a href="#tab-8" class="ico8"><span>Settings</span><em></em></a>
+					<span class="tooltip"><span>Settings</span></span>
+				</li>
+			</ul>
+		</aside>
+	</div>
+</body>
+</html>

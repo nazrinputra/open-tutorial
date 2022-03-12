@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+	<title>Admin Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="css/styleadmin.css" />
+	<link rel="shortcut icon" href="images/icon.png">
+	<script type="text/javascript">
+		function error()
+		{
+			alert("Please login first!");
+		}
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="content">
+			<div class="c1">
+				<div class="controls">
+					<nav class="links">
+						
+					</nav>
+					<div class="profile-box">
+						<span class="profile">
+							<a href="#" class="section" onclick="error();">
+								<span class="text-box">
+									Welcome Guest
+									<strong class="name">Please Login</strong>
+								</span>
+							</a>
+							<a href="#" class="opener"></a>
+						</span>
+						<a href="#" class="btn-on">On</a>
+					</div>
+				</div>
+				<div class="tabs">
+					<div id="tab-1" class="tab">
+						<article>
+							<div class="text-section">
+								<h1>Login</h1>
+								<p>Please login to continue</p>
+							</div>
+							<div class="text-section-black">
+								<form name="login" method="" action="">
+									<p style="margin-top:100px;">Email: <input type="email" name="email" placeholder="Your email" size="30" style="margin-left:30px;"/></p>
+									<p>Password: <input type="password" name="password" placeholder="Your password" size="30" style=""/></p>
+									<p><a href="profile.html"><input type="button" value="Login" name="loginbtn"/></a></p>
+								</form>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+		<aside id="sidebar">
+			<strong class="logo"><a href="index.html">ot</a></strong>
+			<ul class="tabset buttons">
+				<li class="active">
+					<a href="#tab-1" class="ico1"><span>Dashboard</span><em></em></a>
+					<span class="tooltip"><span>Dashboard</span></span>
+				</li>
+				<li>
+					<a href="#tab-2" class="ico2"><span>Gallery</span><em></em></a>
+					<span class="tooltip"><span>Gallery</span></span>
+				</li>
+				<li>
+					<a href="#tab-3" class="ico3"><span>Pages</span><em></em></a>
+					<span class="tooltip"><span>Pages</span></span>
+				</li>
+				<li>
+					<a href="#tab-4" class="ico4"><span>Tools</span><em></em></a>
+					<span class="tooltip"><span>Tools</span></span>
+				</li>
+				<li>
+					<a href="#tab-5" class="ico5"><span>Archive</span><em></em></a>
+					<span class="tooltip"><span>Archive</span></span>
+				</li>
+				<li>
+					<a href="#tab-6" class="ico6">
+						<span>Comments</span><em></em>
+					</a>
+					<span class="tooltip"><span>Comments</span></span>
+				</li>
+				<li>
+					<a href="#tab-7" class="ico7"><span>Connection</span><em></em></a>
+					<span class="tooltip"><span>Connection</span></span>
+				</li>
+				<li>
+					<a href="#tab-8" class="ico8"><span>Settings</span><em></em></a>
+					<span class="tooltip"><span>Settings</span></span>
+				</li>
+			</ul>
+		</aside>
+	</div>
+</body>
+</html>
